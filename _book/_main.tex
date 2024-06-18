@@ -113,14 +113,14 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={A Minimal Book Example},
-  pdfauthor={John Doe},
+  pdftitle={بیوانفورماتیک کاربردی},
+  pdfauthor={رضا کربلایی},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{A Minimal Book Example}
-\author{John Doe}
-\date{2024-05-01}
+\title{بیوانفورماتیک کاربردی}
+\author{رضا کربلایی}
+\date{2024-06-18}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -146,13 +146,17 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{about}{%
-\chapter{About}\label{about}}
+\hypertarget{ux62fux631ux628ux627ux631ux647}{%
+\chapter{درباره}\label{ux62fux631ux628ux627ux631ux647}}
+
+تلاش کرده ام در این محتوا، با بیانی ساده، و در عین حال کاربردی مباحث مربوط به بیوانفورماتیک را بیان کنم.
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
 
-\hypertarget{usage}{%
-\section{Usage}\label{usage}}
+\hypertarget{ux645ux628ux627ux62dux62b}{%
+\section{مباحث}\label{ux645ux628ux627ux62dux62b}}
+
+در هر بخش ابتدا محتوای زیستی مربوطه ( درصورت وجود) آمده و سپس محتوایی در شیوه کار کردن با این نوع داده قرار داده شده است.
 
 Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
 
@@ -160,8 +164,10 @@ Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ shor
 
 The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
 
-\hypertarget{render-book}{%
-\section{Render book}\label{render-book}}
+\hypertarget{ux634ux6ccux648ux647-ux627ux633ux62aux641ux627ux62fux647-ux627ux632-ux6a9ux62aux627ux628}{%
+\section{شیوه استفاده از کتاب}\label{ux634ux6ccux648ux647-ux627ux633ux62aux641ux627ux62fux647-ux627ux632-ux6a9ux62aux627ux628}}
+
+پیش فرض نویسنده، آشنایی اولیه مخاطب با نرم افزار R و محیط لینوکس است.با این حال فصل اول به آشنایی با این مباحث احتصاص یافته است. در مورد سایر فصل ها مخاطب بر اساس نیاز می تواند به مبحث مورد نظر مراجعه و آن را مطالعه نماید.
 
 You can render the HTML version of this example book without changing anything:
 
@@ -183,8 +189,15 @@ Or build the book from the R console:
 
 To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
 
-\hypertarget{preview-book}{%
-\section{Preview book}\label{preview-book}}
+\hypertarget{ux686ux631ux627-ux628ux6ccux648ux627ux646ux641ux648ux631ux645ux627ux62aux6ccux6a9}{%
+\section{چرا بیوانفورماتیک}\label{ux686ux631ux627-ux628ux6ccux648ux627ux646ux641ux648ux631ux645ux627ux62aux6ccux6a9}}
+
+در حال حاضر، در سرتاسر جهان، ماشین ها در حال تعیین توالی ژنوم ها هستند. حتی با کاهش سریع هزینه ها و پیشرفت های عظیم فناوری در توالی یابی ژنوم، ما فقط گوشه ای از اطلاعات بیولوژیکی موجود در هر سلول، بافت، ارگانیسم و اکوسیستم را می بینیم. با این حال، مقدار کمی از کل اطلاعات بیولوژیکی که ما در حال جمع آوری آن هستیم به اندازه کوه های داده ای است که زیست شناسان به آن نیاز دارند. بنابراین درک پیچیدگی های زیستی وابستگی بالایی به مهارت های ما برای کار و تجزیه و تحلیل داده ها دارد.
+
+\hypertarget{ux686ux647-ux645ux647ux627ux631ux62a-ux647ux627ux6ccux6cc-ux631ux627-ux628ux627ux6ccux62f-ux6ccux627ux62f-ux628ux6afux6ccux631ux645}{%
+\subsection{چه مهارت هایی را باید یاد بگیرم؟}\label{ux686ux647-ux645ux647ux627ux631ux62a-ux647ux627ux6ccux6cc-ux631ux627-ux628ux627ux6ccux62f-ux6ccux627ux62f-ux628ux6afux6ccux631ux645}}
+
+برای کار با د اده های بیوانفورماتیکی، به ابزاری فراتر از ابزار های کار با داده های ساده نیاز است. ابزاری که هم توانایی کار با داده های در ابعاد بزرگ را داشته باشد ( مثلا چند ده هزار ژن از چند صد نمونه ) و هم در داخل آن ابزار، ویژگی های کاربردی برای کار با داده های زیستی موجود باشد. بعلاوه، امکان تکرار آزمایش ها در زمان ها و مکان های مختلف در صورت استفاده از ابزار یکسان وجود داشته باشد و درصورت به اشتراک گذاری شیوه استفاده از آن ابزار بین افراد مختلف، آنها بتوانند به سهولت این ابزار را روی دستگاه های سخت افزاری خود استفاده کنند.
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
 
@@ -194,15 +207,21 @@ As you work, you may start a local server to live preview this HTML book. This p
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
+\hypertarget{ux622ux634ux646ux627ux6ccux6cc-ux628ux627-ux645ux62dux6ccux637-ux647ux627ux6cc-ux6a9ux627ux631ux628ux631ux62fux6cc-ux62fux631-ux628ux6ccux648ux627ux646ux641ux648ux631ux645ux627ux62aux6ccux6a9}{%
+\chapter{آشنایی با محیط های کاربردی در بیوانفورماتیک}\label{ux622ux634ux646ux627ux6ccux6cc-ux628ux627-ux645ux62dux6ccux637-ux647ux627ux6cc-ux6a9ux627ux631ux628ux631ux62fux6cc-ux62fux631-ux628ux6ccux648ux627ux646ux641ux648ux631ux645ux627ux62aux6ccux6a9}}
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
+در مورد این کتاب All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
 
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
+\hypertarget{ux646ux631ux645-ux627ux641ux632ux627ux631-ux628ux631ux646ux627ux645ux647-ux646ux648ux6ccux633ux6cc-r}{%
+\section{نرم افزار برنامه نویسی R}\label{ux646ux631ux645-ux627ux641ux632ux627ux631-ux628ux631ux646ux627ux645ux647-ux646ux648ux6ccux633ux6cc-r}}
 
 All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+
+\hypertarget{ux645ux62dux6ccux637-ux644ux6ccux646ux648ux6a9ux633}{%
+\section{محیط لینوکس}\label{ux645ux62dux6ccux637-ux644ux6ccux646ux648ux6a9ux633}}
+
+\hypertarget{github}{%
+\section{github}\label{github}}
 
 \hypertarget{an-unnumbered-section}{%
 \subsection*{An unnumbered section}\label{an-unnumbered-section}}
@@ -211,7 +230,7 @@ All chapter sections start with a second-level (\texttt{\#\#}) or higher heading
 Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
 
 \hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
+\chapter{بیوکنداکتور}\label{cross}}
 
 Cross-references make it easier for your readers to find and link to elements in your book.
 
