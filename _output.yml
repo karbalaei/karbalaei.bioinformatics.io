@@ -15,3 +15,10 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: yes
 bookdown::epub_book: default
+bookdown::pdf_book:
+  keep_tex: true
+bookdown::html_book:
+  css: toc.css
+
+
+
